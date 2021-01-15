@@ -1,0 +1,18 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+        <modelVersion>4.0.0</modelVersion>
+    <groupId>spring.nacos</groupId>
+    <artifactId>spring-nacos</artifactId>
+    <version>1.0</version>
+    <name>spring-nacos</name>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>nacos-config-client</module>
+        <module>nacos-discovery-consumer</module>
+        <module>nacos-discovery-provider</module>
+        <module>nacos-gateway</module>
+    </modules>
+
+</project>
