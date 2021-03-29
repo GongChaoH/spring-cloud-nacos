@@ -9,6 +9,7 @@
 
 
     <modules>
+        <module>nacos-all</module>
         <module>nacos-config-client</module>
         <module>nacos-discovery-consumer</module>
         <module>nacos-discovery-provider</module>
