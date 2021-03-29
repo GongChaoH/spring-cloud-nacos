@@ -10,3 +10,8 @@ protoc --java_out=../java/ ./Data.proto
 链接：https://www.jianshu.com/p/99c48ca4bb72
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
+
+我们源码运行时，通常使用的是单机模式，因此需要在启动参数中进行设置，在jvm的启动参数中，添加-Dnacos.standalone=true
