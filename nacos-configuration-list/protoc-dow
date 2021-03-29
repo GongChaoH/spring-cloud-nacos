@@ -1,1 +1,12 @@
-https://www.jianshu.com/p/99c48ca4bb72
+使用cmd进入到源码的consistency/src/main/proto/路径下
+
+运行命令  
+
+protoc --java_out=../java/ ./consistency.proto
+
+protoc --java_out=../java/ ./Data.proto
+
+作者：努力奋斗的大头
+链接：https://www.jianshu.com/p/99c48ca4bb72
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
