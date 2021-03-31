@@ -98,7 +98,8 @@ public class NacosGatewayDefineConfig implements CommandLineRunner {
         List<RouteDefinition> list = JSON.parseArray(configInfo, RouteDefinition.class);
         list.stream().forEach(definition -> {
             log.info(""+JSON.toJSONString(definition));
-            nacosDynamicRouteService.update(definition);
+            String name = nacosDynamicRouteService.update(definition);
+            log.info(name);
         });
     }
 }
