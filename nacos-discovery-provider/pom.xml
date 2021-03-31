@@ -36,11 +36,11 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>com.alibaba.cloud</groupId>
-			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-			<version>2.1.2.RELEASE</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+			<!--<version>2.1.2.RELEASE</version>-->
+		<!--</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/com.alibaba.boot/nacos-config-spring-boot-starter -->
 		<dependency>
