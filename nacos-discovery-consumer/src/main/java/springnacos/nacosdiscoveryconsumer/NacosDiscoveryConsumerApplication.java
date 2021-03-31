@@ -1,5 +1,6 @@
 package springnacos.nacosdiscoveryconsumer;
 
+import com.alibaba.nacos.api.annotation.NacosProperties;
 import com.alibaba.nacos.api.config.ConfigType;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@NacosPropertySource(dataId = "nacos-discovery-consumer", autoRefreshed = true, groupId = "DEFAULT_GROUP", type = ConfigType.PROPERTIES)
+@NacosPropertySource(dataId = "nacos-discovery-consumer.yml", autoRefreshed = true, type = ConfigType.YAML, properties = @NacosProperties(namespace = "b258991f-3fb4-43b8-9dd1-0c6c04620f03"))
 @RefreshScope
 public class NacosDiscoveryConsumerApplication {
 	@RestController
@@ -28,7 +29,7 @@ public class NacosDiscoveryConsumerApplication {
 		@Autowired
 		private RestTemplate restTemplate;
 
-		@Value("${spring.application.name}")
+		@Value("nacos-discovery-consumer")
 		private String appName;
 
 		@GetMapping("/echo/app-name")

@@ -1,5 +1,6 @@
 package springnacos.nacosdiscoveryprovider;
 
+import com.alibaba.nacos.api.annotation.NacosProperties;
 import com.alibaba.nacos.api.config.ConfigType;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@NacosPropertySource(dataId = "nacos-discovery-provider", type = ConfigType.PROPERTIES, autoRefreshed = true)
+@NacosPropertySource(dataId = "nacos-discovery-provider.properties", type = ConfigType.PROPERTIES, autoRefreshed = true, properties = @NacosProperties(namespace = "b258991f-3fb4-43b8-9dd1-0c6c04620f03"))
 public class NacosDiscoveryProviderApplication {
 
 	public static void main(String[] args) {
