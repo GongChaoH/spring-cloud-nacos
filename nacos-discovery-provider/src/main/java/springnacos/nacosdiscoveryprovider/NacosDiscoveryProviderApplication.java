@@ -27,9 +27,9 @@ public class NacosDiscoveryProviderApplication {
 			return "Hello Nacos Discovery " + string;
 		}
 
-		@GetMapping(value = "/ech/{string}")
+		@GetMapping(value = "/echo/cs/{string}")
 		public String echocs(@PathVariable String string) {
-			return "Hello Nacos Discovery " + string;
+			return "Hello Nacos Discovery CS " + string;
 		}
 	}
 }

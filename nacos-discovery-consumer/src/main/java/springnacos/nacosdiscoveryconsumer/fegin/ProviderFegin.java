@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Component
 public interface ProviderFegin {
 
-    @GetMapping("/echo/{string}")
+    @GetMapping("/echo/cs/{string}")
     public String removeAlyVideo(@PathVariable String string);
 }

@@ -3,6 +3,7 @@ package springnacos.nacosdiscoveryconsumer;
 import com.alibaba.nacos.api.annotation.NacosProperties;
 import com.alibaba.nacos.api.config.ConfigType;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
+import org.springframework.cloud.client.ServiceInstance;
 import springnacos.nacosdiscoveryconsumer.fegin.ProviderFegin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,13 +40,18 @@ public class NacosDiscoveryConsumerApplication {
 
 		@GetMapping("/echo/app-name")
 		public String echoAppName(){
-			//使用 LoadBalanceClient 和 RestTemolate 结合的方式来访问
-//			ServiceInstance serviceInstance = loadBalancerClient.choose("nacos-discovery-provider");
-//			String url = String.format("http://%s:%s/echo/%s",serviceInstance.getHost(),serviceInstance.getPort(),appName);
-//			System.out.println("request url:"+url);
-//			return restTemplate.getForObject(url,String.class);
-			return providerFegin.removeAlyVideo("appName");
+//			使用 LoadBalanceClient 和 RestTemolate 结合的方式来访问
+			ServiceInstance serviceInstance = loadBalancerClient.choose("nacos-discovery-provider");
+			String url = String.format("http://%s:%s/echo/%s",serviceInstance.getHost(),serviceInstance.getPort(),appName);
+			System.out.println("request url:"+url);
+			return restTemplate.getForObject(url,String.class);
 		}
+
+		@GetMapping("/echo/name")
+		public String echo(){
+			return providerFegin.removeAlyVideo("name");
+		}
+
 
 	}
 
