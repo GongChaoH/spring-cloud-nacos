@@ -10,10 +10,11 @@
 
     <modules>
         <module>nacos-all</module>
-        <module>nacos-config-client</module>
+        <!--<module>nacos-config-client</module>-->
         <module>nacos-discovery-consumer</module>
         <module>nacos-discovery-provider</module>
         <module>nacos-gateway</module>
+        <module>nacos-document-related</module>
     </modules>
 
 </project>
