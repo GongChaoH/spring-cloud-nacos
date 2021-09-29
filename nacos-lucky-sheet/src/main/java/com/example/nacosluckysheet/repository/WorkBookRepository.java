@@ -1,6 +1,6 @@
 package com.example.nacosluckysheet.repository;
 
-import com.mars.ecsheet.entity.WorkBookEntity;
+import com.example.nacosluckysheet.entity.WorkBookEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
