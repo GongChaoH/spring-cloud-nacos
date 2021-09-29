@@ -15,6 +15,7 @@
         <module>nacos-discovery-provider</module>
         <module>nacos-gateway</module>
         <module>nacos-document-related</module>
+        <module>nacos-lucky-sheet</module>
     </modules>
 
 </project>
