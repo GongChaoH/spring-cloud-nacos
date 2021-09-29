@@ -22,8 +22,8 @@ public class SheetUtil {
     public static JSONObject getDefautOption() {
 
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("container", "ecsheet");
-        jsonObject.put("title", "ecsheet demo");
+        jsonObject.put("container", "Luckysheet");
+        jsonObject.put("title", "Luckysheet excel");
         jsonObject.put("lang", "zh");
         jsonObject.put("allowUpdate", true);
         jsonObject.put("loadUrl", "");
