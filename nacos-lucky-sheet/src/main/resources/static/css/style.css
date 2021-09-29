@@ -422,8 +422,8 @@
 .MochiBox .MochiContent {
   z-index: 1;
   position: relative;
-  min-width: 200px;
-  min-height: 200px;
+  /*min-width: 200px;*/
+  /*min-height: 200px;*/
   padding: 15px;
   background: white;
   border: 1px solid #f0e0d1;
@@ -670,7 +670,7 @@
 body {
   color: #5f3d1e;
   background: #fdfbee;
-  padding: 20px;
+  /*padding: 20px;*/
   font-family: "Baloo", cursive;
 }
 
@@ -682,7 +682,7 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  /*font-size: 32px;*/
   margin: 0 0 5px;
   font-weight: 200;
   letter-spacing: -0.06em;
