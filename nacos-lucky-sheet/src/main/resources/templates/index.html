@@ -24,16 +24,16 @@
             <h3>
                 新建表格
             </h3>
-            <a href="/index/create"> <img src="img/create.png" /></a>
+            <a target="_self" href="/index/create"> <img src="img/create.png" /></a>
         </mochi-box>
 
         <#list all as wb>
 
         <mochi-box shiba="random" >
             <h3>
-                <a target="_blank" href="/index/${wb.id}">${wb.option.title}</a>
+                <a target="_self" href="/index/${wb.id}">${wb.option.title}</a>
             </h3>
-            <a target="_blank" href="/index/${wb.id}"> <img src="img/excel.png" /></a>
+            <a target="_self" href="/index/${wb.id}"> <img src="img/excel.png" /></a>
         </mochi-box>
     </#list>
 
