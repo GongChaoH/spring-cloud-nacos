@@ -21,19 +21,45 @@
     <main id=app>
 
         <mochi-box shiba="random" >
-            <h3>
-                新建表格
-            </h3>
-            <a target="_self" href="/index/create"> <img src="img/create.png" /></a>
+            <!--<h3>-->
+                <!--新建表格-->
+            <!--</h3>-->
+
+            <div class="mochi_box" title="新建表格">
+                <a href="/index/create">
+                    <div>
+                        <img src="img/create.png"/>
+                    </div>
+                    <div style="font-size: 3px;">
+                        新建表格
+                    </div>
+                </a>
+            </div>
         </mochi-box>
+
 
         <#list all as wb>
 
         <mochi-box shiba="random" >
-            <h3>
-                <a target="_self" href="/index/${wb.id}">${wb.option.title}</a>
-            </h3>
-            <a target="_self" href="/index/${wb.id}"> <img src="img/excel.png" /></a>
+            <!--<h3>-->
+                <!--<a target="_self" href="/index/${wb.id}">${wb.option.title}</a>-->
+            <!--</h3>-->
+
+            <div class="mochi_box" title="${wb.option.title}">
+                <a href="/delete/${wb.id}" class="delete_right" title="删除">
+                    <img src="img/delete.png">
+                </a>
+                <a href="/index/${wb.id}">
+                    <div class="chi_box">
+                        <img src="img/excel.png"/>
+                    </div>
+                    <div style="overflow: hidden; text-overflow: ellipsis; font-size: 3px;">
+                        <nobr>
+                            ${wb.option.title}
+                        </nobr>
+                    </div>
+                </a>
+            </div>
         </mochi-box>
     </#list>
 

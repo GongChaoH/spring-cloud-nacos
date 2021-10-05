@@ -23,7 +23,7 @@ public class SheetUtil {
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("container", "Luckysheet");
-        jsonObject.put("title", "Luckysheet excel");
+        jsonObject.put("title", "demo");
         jsonObject.put("lang", "zh");
         jsonObject.put("allowUpdate", true);
         jsonObject.put("loadUrl", "");
